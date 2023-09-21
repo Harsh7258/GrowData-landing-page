@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg-color: #222222;
+  --text: #E4E4E4;
+  --text2: #A2FF86;
+  --bg-page-1: #045757;
+  --bg-page-2: #044343;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+.text{
+  color: var(--text);
+}
+.text2{
+  color: var(--text2);
+}
+.bg-color{
+  background-color: var(--bg-color);
+}
+
+.navToggle{
+  @apply fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 ease-in-out duration-700;
+}
+.navToggleHide {
+  @apply fixed left-[-100%];
+}
