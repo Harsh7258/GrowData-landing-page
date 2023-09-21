@@ -22,11 +22,13 @@ const Navbar = () => {
                 className='p-4 block md:hidden'
                 onClick={handleNav}>
                     {!menuBurger ? 
-                    <AiOutlineClose size={20} /> : <AiOutlineMenu size={20}/>
+                    <AiOutlineMenu size={20} /> : <AiOutlineClose size={20}/>
                     }
                 </div>
             
-            <div className={!menuBurger ? 'navToggle bg-color' : 'navToggleHide'}>
+            <div className={!menuBurger ?  
+                'navToggleHide' : 
+                'navToggle bg-color'}>
                  <h3 className='w-full text-2xl font-bold text2 m-6'>GrowData.</h3>
                 <ul className='uppercase pt-20'>
                     <li className='p-4 border-b border-gray-600'>Home</li>

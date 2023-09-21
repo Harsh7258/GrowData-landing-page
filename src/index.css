@@ -29,3 +29,10 @@ body{
 .navToggleHide {
   @apply fixed left-[-100%];
 }
+
+.hero-wrapper{
+  @apply max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center;
+}
+.hero-heading2{
+  @apply md:text-5xl sm:text-4xl text-3xl font-bold md:py-6;
+}
