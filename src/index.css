@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 :root{
-  --bg-color: #222222;
-  --text: #E4E4E4;
-  --text2: #A2FF86;
-  --bg-page-1: #045757;
-  --bg-page-2: #044343;
+  --bg-color: #000;
+  --text: #ffff;
+  --text2: #77D970;
+  --bg-page-1: #ffff;
 }
 
 body{
@@ -23,6 +22,13 @@ body{
   background-color: var(--bg-color);
 }
 
+.highlight{
+    display: inline-block;
+    padding: .01em .02em;
+    background: var(--bg-color);
+    color: var(--text2);
+}
+
 .navToggle{
   @apply fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 ease-in-out duration-700;
 }
@@ -30,9 +36,35 @@ body{
   @apply fixed left-[-100%];
 }
 
+/* Hero Section */
 .hero-wrapper{
   @apply max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center;
 }
 .hero-heading2{
   @apply md:text-5xl sm:text-4xl text-3xl font-bold md:py-6;
+}
+.hero-btn{
+  color: var(--bg-color);
+  background-color: var(--text2);
+  @apply w-[180px] rounded-lg font-medium my-4 mx-auto py-2;
+}
+.hero-btn:hover{
+  color: var(--bg-color);
+  background-color: var(--text);
+}
+
+/* Analytics page */
+
+.analytics-wrapper{
+  background-color: var(--bg-page-1);
+  @apply w-full py-16 px-4;
+}
+.analytics-btn{
+  color: var(--text2);
+  background-color: var(--bg-color);
+  @apply w-[180px] rounded-lg font-medium my-4 mx-auto py-2;
+}
+.analytics-btn:hover{
+  color: var(--bg-color);
+  background-color: var(--text2);
 }
